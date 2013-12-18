@@ -1,0 +1,4 @@
+[%
+    META description = 'Markdown js editor';
+    meta.head.bootstrap_markdown = 1;
+%]<textarea[% id.defined ? ' id="' _ id _ '"' : ''%][% name.defined ? ' name="' _ name _ '"' : '' %][% class.defined ? ' class="' _ class _ '"' : '' %][% rows.defined ? ' rows="' _ rows _ '"' : '' %] data-provide="markdown">[% value %]</textarea>

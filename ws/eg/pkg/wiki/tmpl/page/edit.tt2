@@ -12,6 +12,7 @@
   meta.head.highlight = 1;
 
   PROCESS 'macro/tabs.tt2';
+  PROCESS 'macro/formfield.tt2';
 
   group_id = page.args.shift;
   group_code = page.args.shift;
@@ -161,7 +162,7 @@ div_begin(class='tabbable');
  ELSE; 
         input(type='hidden', name='id', value=group_id);
  END;
-        input(rows=10, name='src', class='span10', value=src); 
+        markdown(rows=10, class="span10", name="src", value=src);
       form_end; 
   div_end;
   div_begin(class='tab-pane', id='wikibody');
