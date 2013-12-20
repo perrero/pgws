@@ -1,7 +1,6 @@
 [%
     META description = 'Подключение CSS и JS файлов для JS-редактора Bootstrap-markdown';
     meta.top_headers.push(
-        "/css/external/bootstrap-glyphicons.css",
         "/css/external/bootstrap-markdown.min.css",
         "/js/external/core//bootstrap-markdown.js"
     );

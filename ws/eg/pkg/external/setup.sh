@@ -25,6 +25,7 @@ bootstrap-datepicker.zip https://codeload.github.com/eternicode/bootstrap-datepi
 bootstrap-timepicker.zip https://codeload.github.com/tarruda/bootstrap-datetimepicker/zip/master
 qunit.zip https://github.com/jquery/qunit/archive/master.zip
 bootstrap-wysiwyg.zip https://github.com/mindmup/bootstrap-wysiwyg/archive/master.zip
+bootstrap-markdown-v1-patched.zip https://github.com/perrero/bootstrap-markdown/archive/v1_hide_btns_transinput.zip
 
 EOF
 }
@@ -145,6 +146,11 @@ for s in * ; do
       echo "bootstrap-wysiwyg-master setup"
       mk_lnd bootstrap-wysiwyg.js js/core $s/
       mk_lnd jquery.hotkeys.js js/core $s/external/
+    ;;
+    bootstrap-markdown-1_hide_btns_transinput*)
+      echo "bootstrap-markdown-1_hide_btns_transinput setup"
+      mk_lnd bootstrap-markdown.min.css css $s/css/
+      mk_lnd bootstrap-markdown.js js/core $s/js/
     ;;
     bootswatch-*)
       echo "bootswatch skins setup"
